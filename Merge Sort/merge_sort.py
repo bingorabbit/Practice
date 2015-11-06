@@ -27,14 +27,10 @@ def merge_sort(unsorted_list):
         else:
             sorted_list.append(right_half[k])
             k += 1
-    # print("Sorted List Mid Merge: {0}".format(sorted_list))
-    while i < len(left_half):
-        sorted_list.append(left_half[i])
-        i += 1
 
-    while k < len(right_half):
-        sorted_list.append(right_half[k])
-        k += 1
+    sorted_list.extend(left_half[i:])
+    sorted_list.extend(right_half[k:])
+
     return sorted_list
 
 
