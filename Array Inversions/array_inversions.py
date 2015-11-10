@@ -1,3 +1,6 @@
+"""
+A simple script to count array inversions.
+"""
 __author__ = 'bingorabbit'
 
 
